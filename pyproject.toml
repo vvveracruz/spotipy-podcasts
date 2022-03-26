@@ -5,9 +5,12 @@ description = ""
 authors = ["vvveracruz <me@vgg.cz>"]
 
 [tool.poetry.dependencies]
-python = "^3.0"
+python = ">=3.6.0,<4.0"
+spotipy = "^2.19.0"
 
 [tool.poetry.dev-dependencies]
+black = {version="^22.1.0", python=">=3.6.2,<4.0"}
+ipython = {version="^8.1.1", python=">=3.8,<4.0"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
