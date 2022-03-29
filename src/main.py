@@ -24,5 +24,5 @@ sp = spotipy.Spotify(
 
 # print(sp.current_user_saved_shows())
 for n in sp.current_user_saved_shows(limit=2)["items"]:
-    print(n["show"]["name"])
-    print("    ", type(sp.show_episodes(n["show"]["id"], limit=1)["items"]))
+    print(n["show"]["name"], n["show"]["id"])
+    print("    ", sp.show_episodes(n["show"]["id"], limit=1)["items"][0])
