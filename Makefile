@@ -1,6 +1,6 @@
 init:
 	poetry update
-	poetry install
+	poetry install --dev
 
 clean: 
 	poetry run black src/
