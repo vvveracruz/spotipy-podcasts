@@ -1,3 +1,4 @@
 /src/secrets.py
 *.cache
+*.lock
 __pycache__
